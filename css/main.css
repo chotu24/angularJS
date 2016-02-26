@@ -1,0 +1,16 @@
+.buttonDeactivate{
+	border: 2px solid red;
+	background-color: grey;
+}
+
+button{
+	background-color: #0b6efd;
+}
+
+.colorWhite{
+	color: #fff;
+}	
+
+.borderHighlight{
+	border: 1px solid red;
+}
