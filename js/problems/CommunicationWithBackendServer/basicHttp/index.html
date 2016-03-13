@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic http ngJS</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+	    <script src="basicHttp.js"></script>
+</head>
+<body>
+
+<section ng-app="basicHttpApp" ng-controller="basicHttpController">
+	<button ng-click="getName()">http Get request</button>
+	<span>{{data.name}}</span>
+</section>
+
+</body>
+</html>

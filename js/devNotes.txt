@@ -1,0 +1,13 @@
+1 Error:
+while trying to retrive the data.json I was getting this error
+AngularJS Error: Cross origin requests are only supported for protocol schemes: http, data, chrome-extension, https
+
+Solution: 
+I got it resolved by running a npm server
+http-server 
+>http-server C:\Users\Aashish\Documents\Aks\GitHub6\angularJS\js\problems\CommunicationWithBackendServer
+
+
+http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes
+
+2. Error:
