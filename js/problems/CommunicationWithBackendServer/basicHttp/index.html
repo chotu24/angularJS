@@ -6,11 +6,17 @@
 	    <script src="basicHttp.js"></script>
 </head>
 <body>
-
-<section ng-app="basicHttpApp" ng-controller="basicHttpController">
-	<button ng-click="getName()">http Get request</button>
-	<span>{{data.name}}</span>
-</section>
+	<section ng-app="basicHttpApp" ng-controller="basicHttpController">
+		<button ng-click="getName()">http Get request</button>
+		<span>{{data}}</span>
+		</br><hr>
+		<button ng-click="getThen()">http Then</button>
+		<span>{{userName}}</span>
+		</br><hr>
+		<button ng-click="getUser()">$http url call get</button>
+		<span>{{getGenericUser}}</span>
+		</br><hr>
+	</section>
 
 </body>
 </html>

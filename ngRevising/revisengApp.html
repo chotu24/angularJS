@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="reviseNG">
+<head>
+	<title>Revising ng version 1</title>
+	<script type="text/javascript" src="../lib/angular.min1.4.5.js"></script>
+	<script type="text/javascript" src="reviseNG.js"></script>
+</head>
+<body ng-controller="loginCtrl">
+		<header ng-show="isUserLogin">
+				<h1>Welcome {{userName}}</h1>
+		</header>
+
+		<section>	
+
+				<input type="text" placeholder="enter User name" ng-model="userName"/>
+				<br>
+				<input type="password" placeholder="password" ng-model="password"/>
+				<br>
+				<input type="submit" value="Submit" ng-click="userLogin()"/>
+		</section>
+
+</body>
+</html>

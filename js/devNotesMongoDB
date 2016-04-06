@@ -1,0 +1,24 @@
+toDo:create a DB and other details required
+ref: http://docs.mlab.com/connecting/#connect-string
+
+mongoDB: user credentail details
+
+{
+    "_id": "ananddb.anand24",
+    "user": "anand24",
+    "db": "ananddb",
+    "credentials": {
+        "SCRAM-SHA-1": {
+            "iterationCount": 10000,
+            "salt": "/DyWi0bqyqb5E4R4rTR4wg==",
+            "storedKey": "+ficGgG49VRWchIfWcizQuXISQg=",
+            "serverKey": "U2PyUU4jsosVKMDiWXJwP4DPRmg="
+        }
+    },
+    "roles": [
+        {
+            "role": "dbOwner",
+            "db": "ananddb"
+        }
+    ]
+}
