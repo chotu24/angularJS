@@ -1,7 +1,8 @@
 (function(){
-
+	
+	
 	var reviseNG = angular.module('reviseNG',[])
-
+	
 	var loginCtrl = function($scope){
 		$scope.isUserLogin = false;
 		var userDetials = {};

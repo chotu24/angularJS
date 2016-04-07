@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="reviseNG">
+<html>
 <head>
 	<title>Revising ng version 1</title>
-	<script type="text/javascript" src="../lib/angular.min1.4.5.js"></script>
+	<script type="text/javascript" src="../lib/angular1.5.1.js"></script>
+	<!--
 	<script type="text/javascript" src="reviseNG.js"></script>
+	-->
+	
+	<script type="text/javascript" src="../js/patterns/taskManager.js"></script>
+	<script type="text/javascript" src="../js/patterns/task.js"></script>
 </head>
-<body ng-controller="loginCtrl">
-		<header ng-show="isUserLogin">
-				<h1>Welcome {{userName}}</h1>
-		</header>
+<body ng-app="reviseNG">
+	
+	<section ng-controller="taskCtrl as ctrl" class="constructor Pattern">
+		 <h2> contructor pattern Sample</h2>
 
-		<section>	
+		 <div ng-repeat="task in ctrl.tasks">
+			<input type="checkbox" ng-checked="task.completed" ng-click="task.complete()"/>
+			 		{{task.name}}
+		 </div>
 
-				<input type="text" placeholder="enter User name" ng-model="userName"/>
-				<br>
-				<input type="password" placeholder="password" ng-model="password"/>
-				<br>
-				<input type="submit" value="Submit" ng-click="userLogin()"/>
-		</section>
+	</section>
 
+</section>
 </body>
 </html>
