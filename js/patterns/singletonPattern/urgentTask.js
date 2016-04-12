@@ -1,7 +1,7 @@
 (function(){
-	var decorator = angular.module('reviseNG');
+	var decoratorS = angular.module('reviseNG');
 
-	decorator.factory('UrgentTask', function(Task, taskRepo){
+	decoratorS.factory('UrgentTask', function(Task, taskRepo){
 
 		var UrgentTask = function(data){
 			Task.call(this,data);
