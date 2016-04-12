@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>singleton </title>
+	<script type="text/javascript" src="../../lib/angular1.5.1.js"></script>
+	<script type="text/javascript" src="../../js/patterns/singletonPattern/main.js"></script>
+	<script type="text/javascript" src="../../js/patterns/singletonPattern/task.js"></script>
+	<script type="text/javascript" src="../../js/patterns/singletonPattern/taskRepo.js"></script>
+</head>
+<body ng-app="reviseNG">
+
+	<section ng-controller = "taskCtrl as task">
+		<div ng-repeat="task in task.tasks">
+			<input type="checkbox" ng-checked="task.completed" ng-click="task.complete()">{{task.name}}<br> 
+		</div>
+	</section>
+
+</body>
+</html>
