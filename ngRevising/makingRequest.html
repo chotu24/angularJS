@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revising ng version 1</title>
+	<script type="text/javascript" src="../lib/angular1.5.1.js"></script>
+	<!--
+	<script type="text/javascript" src="reviseNG.js"></script>
+	-->
+	
+	<script type="text/javascript" src="../js/patterns/taskManager.js"></script>
+	<script type="text/javascript" src="../js/patterns/task.js"></script>
+</head>
+<body ng-app="reviseNG">
+	
+	<section ng-controller="taskCtrl as ctrl" class="constructor Pattern">
+		 <h2> contructor pattern Sample</h2>
+
+	</section>
+
+	<section ng-controller="taskCtrl2">
+	for time being provide username as chotu24
+		<input type="text" ng-model="username"/>
+		<input type="submit" value="Search" ng-click="getUser(username)"/>
+		<div> <span>my Id is </span>{{id}}</div>
+		<img ng-src="{{myLogo}}">
+
+		Second Controller
+	</section>
+</section>
+</body>
+</html>
